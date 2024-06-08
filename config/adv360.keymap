@@ -90,11 +90,11 @@
 
         layer_programming {
             bindings = <
- &trans  &trans  &trans  &trans  &trans  &trans            &trans                                                  &trans  &trans                                  &trans                      &trans                          &trans         &trans  &trans
- &trans  &trans  &trans  &trans  &trans  &trans            &trans                                                  &trans  &trans                                  &trans                      &trans                          &trans         &trans  &trans
- &tog 0  &trans   &none   &none   &none  &trans            &trans  &trans  &trans                  &trans  &trans  &trans     &mt  &mt LEFT_PARENTHESIS RIGHT_PARENTHESIS  &mt LEFT_BRACE RIGHT_BRACE  &mt LEFT_BRACKET RIGHT_BRACKET  &kp SEMICOLON  &trans
- &trans  &trans  &trans  &trans  &trans  &trans                            &trans                  &trans                  &trans                                  &trans                      &trans                          &trans         &trans  &trans
- &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans                  &trans  &trans  &trans                                          &trans                      &trans                          &trans         &trans  &trans
+ &trans  &trans    &trans    &trans         &trans  &trans            &trans                                                  &trans  &trans                                  &trans                      &trans                          &trans         &trans  &trans
+ &trans  &trans    &trans    &trans         &trans  &trans            &trans                                                  &trans  &trans                                  &trans                      &trans                          &trans         &trans  &trans
+ &tog 0  &trans  &kp STAR  &kp STAR  &kp AMPERSAND  &trans            &trans  &trans  &trans                  &trans  &trans  &trans     &mt  &mt LEFT_PARENTHESIS RIGHT_PARENTHESIS  &mt LEFT_BRACE RIGHT_BRACE  &mt LEFT_BRACKET RIGHT_BRACKET  &kp SEMICOLON  &trans
+ &trans  &trans    &trans    &trans          &none  &trans                            &trans                  &trans                  &trans                                  &trans                      &trans                          &trans         &trans  &trans
+ &trans  &trans    &trans    &trans         &trans                    &trans  &trans  &trans                  &trans  &trans  &trans                                          &trans                      &trans                          &trans         &trans  &trans
             >;
         };
 
