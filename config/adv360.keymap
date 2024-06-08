@@ -90,11 +90,11 @@
 
         layer_programming {
             bindings = <
- &trans  &trans    &trans           &trans           &trans  &trans            &trans                                                  &trans  &trans                                  &trans                      &trans                          &trans         &trans  &trans
- &trans  &trans    &trans           &trans           &trans  &trans            &trans                                                  &trans  &trans                                  &trans                      &trans                          &trans         &trans  &trans
- &tog 0  &trans  &kp STAR         &kp PIPE    &kp AMPERSAND  &trans            &trans  &trans  &trans                  &trans  &trans  &trans     &mt  &mt LEFT_PARENTHESIS RIGHT_PARENTHESIS  &mt LEFT_BRACE RIGHT_BRACE  &mt LEFT_BRACKET RIGHT_BRACKET  &kp SEMICOLON  &trans
- &trans  &trans    &trans  &macro_logic_or  &macro_logic_or  &trans                            &trans                  &trans                  &trans                                  &trans                      &trans                          &trans         &trans  &trans
- &trans  &trans    &trans           &trans           &trans                    &trans  &trans  &trans                  &trans  &trans  &trans                                          &trans                      &trans                          &trans         &trans  &trans
+ &trans  &trans    &trans           &trans            &trans  &trans            &trans                                                  &trans  &trans                                  &trans                      &trans                          &trans         &trans  &trans
+ &trans  &trans    &trans           &trans            &trans  &trans            &trans                                                  &trans  &trans                                  &trans                      &trans                          &trans         &trans  &trans
+ &tog 0  &trans  &kp STAR         &kp PIPE     &kp AMPERSAND  &trans            &trans  &trans  &trans                  &trans  &trans  &trans     &mt  &mt LEFT_PARENTHESIS RIGHT_PARENTHESIS  &mt LEFT_BRACE RIGHT_BRACE  &mt LEFT_BRACKET RIGHT_BRACKET  &kp SEMICOLON  &trans
+ &trans  &trans    &trans  &macro_logic_or  &macro_logic_and  &trans                            &trans                  &trans                  &trans                                  &trans                      &trans                          &trans         &trans  &trans
+ &trans  &trans    &trans           &trans            &trans                    &trans  &trans  &trans                  &trans  &trans  &trans                                          &trans                      &trans                          &trans         &trans  &trans
             >;
         };
 
