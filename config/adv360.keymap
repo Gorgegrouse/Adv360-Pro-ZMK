@@ -138,6 +138,20 @@
         };
     };
 
+    combos {
+        compatible = "zmk,combos";
+
+        const_chord {
+            bindings = <&chorded_const>;
+            key-positions = <23 28>;
+        };
+
+        constexpr_chord {
+            bindings = <&chorded_constexpr>;
+            key-positions = <28 23 31>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
@@ -145,7 +159,7 @@
             bindings = <
 &kp ESCAPE  &kp N1            &kp N2     &kp N3      &kp N4     &kp N5  &tog 1                                                        &mo 3      &kp N6  &kp N7  &kp N8    &kp N9    &kp N0     &kp LEFT_BRACKET
 &kp TAB     &kp SINGLE_QUOTE  &kp COMMA  &kp PERIOD  &kp P      &kp Y   &to 4                                                         &none      &kp F   &kp G   &kp C     &kp R     &kp L      &kp BSLH
-&to 5       &kp A             &kp O      &kp E       &kp U      &kp I   &none          &kp LCTRL  &kp LALT      &kp LGUI   &kp RCTRL  &none      &kp D   &kp H   &kp T     &kp N     &kp S      &kp MINUS
+&mo 5       &kp A             &kp O      &kp E       &kp U      &kp I   &none          &kp LCTRL  &kp LALT      &kp LGUI   &kp RCTRL  &none      &kp D   &kp H   &kp T     &kp N     &kp S      &kp MINUS
 &kp LSHFT   &kp SEMICOLON     &kp Q      &kp J       &kp K      &kp X                             &kp HOME      &kp PG_UP                        &kp B   &kp M   &kp W     &kp V     &kp Z      &kp RSHFT
 &mo 2       &kp GRAVE         &kp CAPS   &kp LEFT    &kp RIGHT          &kp BACKSPACE  &kp DEL    &kp ESC       &kp PG_DN  &kp ENTER  &kp SPACE          &kp UP  &kp DOWN  &kp FSLH  &kp EQUAL  &mo 2
             >;
