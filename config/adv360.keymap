@@ -183,31 +183,43 @@
         assert_chord {
             bindings = <&chorded_assert>;
             key-positions = <28 29>;
+            timeout-ms = <100>;
+            require-prior-idle-ms = <100>;
         };
 
         chorded_return {
             bindings = <&chorded_return>;
             key-positions = <28 25>;
+            timeout-ms = <100>;
+            require-prior-idle-ms = <100>;
         };
 
         template_chord {
             bindings = <&chorded_template>;
             key-positions = <28 42>;
+            timeout-ms = <100>;
+            require-prior-idle-ms = <100>;
         };
 
         consteval_chord {
             bindings = <&chorded_consteval>;
             key-positions = <28 31>;
+            timeout-ms = <100>;
+            require-prior-idle-ms = <100>;
         };
 
         static_chord {
             bindings = <&chorded_static>;
             key-positions = <28 44>;
+            timeout-ms = <100>;
+            require-prior-idle-ms = <100>;
         };
 
         sudo_pacman_s {
             bindings = <&sudo_pacman_s>;
             key-positions = <28 23>;
+            timeout-ms = <100>;
+            require-prior-idle-ms = <100>;
         };
     };
 
