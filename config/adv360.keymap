@@ -143,17 +143,17 @@
 
         const_chord {
             bindings = <&chorded_const>;
-            key-positions = <23 28>;
+            key-positions = <28 24>;
         };
 
         constexpr_chord {
             bindings = <&chorded_constexpr>;
-            key-positions = <28 23 31>;
+            key-positions = <28 31 24>;
         };
 
         void_chord {
             bindings = <&chorded_void>;
-            key-positions = <28 56>;
+            key-positions = <28 57>;
         };
 
         maybe_unused_chord {
@@ -163,17 +163,17 @@
 
         nodiscard_chord {
             bindings = <&chorded_nodiscard>;
-            key-positions = <28 42>;
+            key-positions = <28 43>;
         };
 
         std_ranges_chord {
             bindings = <&chorded_namespace_ranges>;
-            key-positions = <28 43 24>;
+            key-positions = <28 44 25>;
         };
 
         std_views_chord {
             bindings = <&chorded_namespace_views>;
-            key-positions = <28 43 56>;
+            key-positions = <28 44 57>;
         };
 
         assert_chord {
@@ -183,12 +183,12 @@
 
         chorded_return {
             bindings = <&chorded_return>;
-            key-positions = <28 24>;
+            key-positions = <28 25>;
         };
 
         template_chord {
             bindings = <&chorded_template>;
-            key-positions = <28 41>;
+            key-positions = <28 42>;
         };
     };
 
