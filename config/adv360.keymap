@@ -139,6 +139,13 @@
             bindings = <&kp F &kp O &kp R &kp SPACE &kp LPAR &kp C &kp O &kp N &kp S &kp T &kp SPACE &kp A &kp U &kp T &kp O &kp SPACE &kp COLON &kp SPACE &kp I &kp O &kp T &kp A &kp LPAR &kp N0 &kp COMMA &kp SPACE &kp RPAR &kp RPAR &kp SPACE &kp LBRC &kp RET &kp RET &kp RBRC &kp UP_ARROW &kp UP_ARROW>;
             label = "CHORDED_FOR_IOTA";
         };
+
+        sudo_pacman_s: sudo_pacman_s {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&none &kp S &kp U &kp D &kp O &kp SPACE &kp P &kp A &kp C &kp M &kp A &kp N &kp SPACE &kp MINUS &kp LS(S)>;
+            label = "SUDO_PACMAN_S";
+        };
     };
 
     combos {
@@ -196,6 +203,11 @@
         static_chord {
             bindings = <&chorded_static>;
             key-positions = <28 44>;
+        };
+
+        sudo_pacman_s {
+            bindings = <&sudo_pacman_s>;
+            key-positions = <28 23>;
         };
     };
 
