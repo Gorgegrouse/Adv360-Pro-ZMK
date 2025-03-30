@@ -144,6 +144,7 @@
         const_chord {
             bindings = <&chorded_const>;
             key-positions = <28 24>;
+            timeout-ms = <100>;
         };
 
         constexpr_chord {
