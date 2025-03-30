@@ -150,6 +150,46 @@
             bindings = <&chorded_constexpr>;
             key-positions = <28 23 31>;
         };
+
+        void_chord {
+            bindings = <&chorded_void>;
+            key-positions = <28 56>;
+        };
+
+        maybe_unused_chord {
+            bindings = <&chorded_maybe_unused>;
+            key-positions = <28 55>;
+        };
+
+        nodiscard_chord {
+            bindings = <&chorded_nodiscard>;
+            key-positions = <28 42>;
+        };
+
+        std_ranges_chord {
+            bindings = <&chorded_namespace_ranges>;
+            key-positions = <28 43 24>;
+        };
+
+        std_views_chord {
+            bindings = <&chorded_namespace_views>;
+            key-positions = <28 43 56>;
+        };
+
+        assert_chord {
+            bindings = <&chorded_assert>;
+            key-positions = <28 29>;
+        };
+
+        chorded_return {
+            bindings = <&chorded_return>;
+            key-positions = <28 24>;
+        };
+
+        template_chord {
+            bindings = <&chorded_template>;
+            key-positions = <28 41>;
+        };
     };
 
     keymap {
