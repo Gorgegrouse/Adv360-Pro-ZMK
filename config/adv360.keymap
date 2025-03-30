@@ -153,7 +153,7 @@
 
         constexpr_chord {
             bindings = <&chorded_constexpr>;
-            key-positions = <28 31 24>;
+            key-positions = <28 51>;
             timeout-ms = <100>;
             require-prior-idle-ms = <50>;
         };
@@ -173,16 +173,6 @@
             key-positions = <28 43>;
         };
 
-        std_ranges_chord {
-            bindings = <&chorded_namespace_ranges>;
-            key-positions = <28 44 25>;
-        };
-
-        std_views_chord {
-            bindings = <&chorded_namespace_views>;
-            key-positions = <28 44 57>;
-        };
-
         assert_chord {
             bindings = <&chorded_assert>;
             key-positions = <28 29>;
@@ -196,6 +186,16 @@
         template_chord {
             bindings = <&chorded_template>;
             key-positions = <28 42>;
+        };
+
+        consteval_chord {
+            bindings = <&chorded_consteval>;
+            key-positions = <28 31>;
+        };
+
+        static_chord {
+            bindings = <&chorded_static>;
+            key-positions = <28 44>;
         };
     };
 
