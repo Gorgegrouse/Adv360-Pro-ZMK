@@ -126,7 +126,10 @@
         chorded_return: chorded_return {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp R &kp E &kp T &kp U &kp R &kp N &kp SPACE>;
+            bindings =
+                <&kp R &kp E &kp T &kp U &kp R &kp N &kp SPACE>,
+                <&macro_press>;
+
             label = "CHORDED_RETURN";
         };
 
@@ -145,11 +148,14 @@
             bindings = <&chorded_const>;
             key-positions = <28 24>;
             timeout-ms = <100>;
+            require-prior-idle-ms = <100>;
         };
 
         constexpr_chord {
             bindings = <&chorded_constexpr>;
             key-positions = <28 31 24>;
+            timeout-ms = <100>;
+            require-prior-idle-ms = <50>;
         };
 
         void_chord {
