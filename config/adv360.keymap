@@ -35,22 +35,8 @@
         chorded_const: chorded_const {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp C &kp O &kp N &kp S &kp T &kp SPACE>;
+            bindings = <&kp C &kp O &kp N &kp S &kp T>;
             label = "CHORDED_CONST";
-        };
-
-        chorded_constexpr: chorded_constexpr {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp C &kp O &kp N &kp S &kp T &kp E &kp X &kp P &kp R &kp SPACE>;
-            label = "CHORDED_CONSTEXPR";
-        };
-
-        chorded_static: chorded_static {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp S &kp T &kp A &kp T &kp I &kp C &kp SPACE>;
-            label = "CHORDED_STATIC";
         };
 
         chorded_nodiscard: chorded_nodiscard {
@@ -60,91 +46,11 @@
             label = "CHORDED_NODISCARD";
         };
 
-        chorded_std_colon_colon: chorded_std_colon_colon {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp S &kp T &kp D &kp COLON &kp COLON>;
-            label = "CHORDED_STD_COLON_COLON";
-        };
-
-        chorded_namespace_ranges: chorded_namespace_ranges {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp S &kp T &kp D &kp COLON &kp COLON &kp R &kp A &kp N &kp G &kp E &kp S &kp COLON &kp COLON>;
-            label = "CHORDED_NAMESPACE_RANGES";
-        };
-
-        chorded_namespace_views: chorded_namespace_views {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp S &kp T &kp D &kp COLON &kp COLON &kp V &kp I &kp E &kp W &kp S &kp COLON &kp COLON>;
-            label = "CHORDED_NAMESPACE_VIEWS";
-        };
-
         chorded_maybe_unused: chorded_maybe_unused {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp LBKT &kp LBKT &kp M &kp A &kp Y &kp B &kp E &kp UNDER &kp U &kp N &kp U &kp S &kp E &kp D &kp RBKT &kp RBKT &kp SPACE>;
             label = "CHORDED_MAYBE_UNUSED";
-        };
-
-        chorded_assert: chorded_assert {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp A &kp S &kp S &kp E &kp R &kp T &kp LPAR &kp RPAR &kp SEMI &kp LEFT &kp LEFT_ARROW>;
-            label = "CHORDED_ASSERT";
-        };
-
-        chorded_consteval: chorded_consteval {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp C &kp O &kp N &kp S &kp T &kp E &kp V &kp A &kp L &kp SPACE>;
-            label = "CHORDED_CONSTEVAL";
-        };
-
-        chorded_void: chorded_void {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp V &kp O &kp I &kp D &kp SPACE>;
-            label = "CHORDED_VOID";
-        };
-
-        chorded_auto: chorded_auto {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp A &kp U &kp T &kp O &kp SPACE>;
-            label = "CHORDED_AUTO";
-        };
-
-        chorded_template: chorded_template {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp T &kp E &kp M &kp P &kp L &kp A &kp T &kp E &kp LT &kp GT &kp LEFT_ARROW>;
-            label = "CHORDED_TEMPLATE";
-        };
-
-        chorded_return: chorded_return {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings =
-                <&kp R &kp E &kp T &kp U &kp R &kp N &kp SPACE>,
-                <&macro_press>;
-
-            label = "CHORDED_RETURN";
-        };
-
-        sudo_pacman_s: sudo_pacman_s {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&none &kp S &kp U &kp D &kp O &kp SPACE &kp P &kp A &kp C &kp M &kp A &kp N &kp SPACE &kp MINUS &kp LS(S)>;
-            label = "SUDO_PACMAN_S";
-        };
-
-        chorded_for_iota: chorded_for_iota {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp F &kp O &kp R &kp SPACE &kp LPAR &kp C &kp O &kp N &kp S &kp T &kp SPACE &kp I &kp N &kp T &kp SPACE &kp UNDER &kp SPACE &kp COLON &kp SPACE &kp I &kp O &kp T &kp A &kp LPAR &kp N0 &kp COMMA &kp SPACE>;
-            label = "CHORDED_FOR_IOTA";
         };
     };
 
@@ -158,18 +64,6 @@
             require-prior-idle-ms = <100>;
         };
 
-        constexpr_chord {
-            bindings = <&chorded_constexpr>;
-            key-positions = <28 51>;
-            timeout-ms = <100>;
-            require-prior-idle-ms = <50>;
-        };
-
-        void_chord {
-            bindings = <&chorded_void>;
-            key-positions = <28 57>;
-        };
-
         maybe_unused_chord {
             bindings = <&chorded_maybe_unused>;
             key-positions = <28 55>;
@@ -178,55 +72,6 @@
         nodiscard_chord {
             bindings = <&chorded_nodiscard>;
             key-positions = <28 43>;
-        };
-
-        assert_chord {
-            bindings = <&chorded_assert>;
-            key-positions = <28 29>;
-            timeout-ms = <100>;
-            require-prior-idle-ms = <100>;
-        };
-
-        chorded_return {
-            bindings = <&chorded_return>;
-            key-positions = <28 25>;
-            timeout-ms = <100>;
-            require-prior-idle-ms = <100>;
-        };
-
-        template_chord {
-            bindings = <&chorded_template>;
-            key-positions = <28 42>;
-            timeout-ms = <100>;
-            require-prior-idle-ms = <100>;
-        };
-
-        consteval_chord {
-            bindings = <&chorded_consteval>;
-            key-positions = <28 31>;
-            timeout-ms = <100>;
-            require-prior-idle-ms = <100>;
-        };
-
-        static_chord {
-            bindings = <&chorded_static>;
-            key-positions = <28 44>;
-            timeout-ms = <100>;
-            require-prior-idle-ms = <100>;
-        };
-
-        sudo_pacman_s {
-            bindings = <&sudo_pacman_s>;
-            key-positions = <28 23>;
-            timeout-ms = <100>;
-            require-prior-idle-ms = <100>;
-        };
-
-        for_iota_chord {
-            bindings = <&chorded_for_iota>;
-            key-positions = <28 33 22>;
-            timeout-ms = <100>;
-            require-prior-idle-ms = <100>;
         };
     };
 
